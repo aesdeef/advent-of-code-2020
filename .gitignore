@@ -166,3 +166,6 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+# Puzzle input
+input_*.txt
