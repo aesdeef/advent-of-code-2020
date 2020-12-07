@@ -11,6 +11,8 @@ def parse_input():
 
 
 if __name__ == "__main__":
+    parse_input()
+
     contain_shiny_gold = {
         bag for bag in Bag.collection.values() if bag.contains_shiny_gold
     }

@@ -43,7 +43,7 @@ class Bag:
         if not self.containees:
             return False
 
-        if "shiny gold" in {name for _, name in self.containees}:
+        if "shiny gold" in (name for _, name in self.containees):
             return True
 
         return any(

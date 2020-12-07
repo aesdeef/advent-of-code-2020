@@ -2,7 +2,7 @@ from itertools import combinations
 
 # get all the numbers from the input
 with open("input_01.txt", "r") as f:
-    numbers = {int(x) for x in f.readlines()}
+    numbers = [int(x) for x in f.readlines()]
 
 # find the pair of numbers that sums up to 2020 and return the product
 for x, y in combinations(numbers, 2):
