@@ -1,0 +1,2 @@
+class InfiniteLoopError(RuntimeError):
+    pass
