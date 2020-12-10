@@ -11,7 +11,7 @@ The description of the order in which you need to pick the adapters is surprisin
 
 ## Part 2
 
-I've noticed that all the differences on the list were either 1 or 3, so my first thought was that the adapters on the ends of those differences (and thus the difference itself) could not be changed. My initial idea was to extract the chains of consecutive 1s, get the number of possibilities for each chain, and multiply the results to get the answer. (Since those chains were separated by 3s, changing one chain would not affect the number of possibilites in any other chain, i.e. the chains are independent.)
+I've noticed that all the differences on the list were either 1 or 3, so my first thought was that the adapters where the difference was 3 (and the difference itself) could not be changed. My initial idea was to extract the chains of consecutive 1s, get the number of possibilities for each chain, and multiply the results to get the answer. (Since those chains were separated by 3s, changing one chain would not affect the number of possibilites in any other chain, i.e. the chains are independent.)
 
 To find the pattern for calculating the number of possibilities I wrote down a few chains of 1s and started working out the possibilites by hand. I've noticed that if the sum of the first two elements at any time was greater than 3 your only option is to put the first element aside and consider what's left, but if it's 3 or less you have a choice of adding them together or keeping them separate. I've turned that into a function and instinctively decorated it with `lru_cache`, which required using tuples as arguments, as lists are not hashable. I plugged in the differences, and the output turned out to be correct.
 
