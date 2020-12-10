@@ -1,7 +1,7 @@
 # Day 10
 
 Today I've decided to include how my code looked like at the moment I got the second answer (in `raw.py`),
-just because I'm chuffed that I got the recursive function in part 2 correct on the first time :D
+just because I'm chuffed that I got the recursive function in part 2 correct on the first try :D
 
 Here's my thought process behind today's puzzle, since the code may seem quite far removed from the puzzle description.
 
